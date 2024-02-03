@@ -1,0 +1,507 @@
+:root {
+    --primary: #62829a;
+    --secondary: #1a374d;
+    --blueTertiary: #79bedf;
+    --text-color: #fff;
+    --text-secondary: #fff;
+    --text-tertiary: #5d5d5d;
+    --gold: #eddeaf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    box-sizing: border-box;
+}
+
+/* Event form */
+
+#event-subscription {
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(26,55,77,.35)), url(assets/hrz-5\(1\).webp);
+    background-position: center;
+    background-size: cover;
+    height: 95vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+}
+
+#disclaimer h2, #disclaimer .event-date{
+    color: var(--primary);
+}
+
+
+#disclaimer h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
+}
+
+#disclaimer .about-event{
+    font-size: 2rem;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#disclaimer p{
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+#disclaimer .event-date{
+    font-weight: bold;
+}
+
+#subscription{
+    background-color: var(--secondary);
+    padding: 2rem;
+    max-width: 22%;
+    border-radius: 30px 10px;
+    display: none; 
+}
+
+#subscription p{
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+}
+
+.form-group label{
+    color: var(--gold);
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select{
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn{
+
+    background-color: var( --blueTertiary);
+    color: #000;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 15px;
+}
+
+.btn a{
+ text-decoration: none;
+ color: #000;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+/* Benefits section */
+#key-benefits h2{
+    background-color: var(--secondary);
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.benefits{
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.benefit{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-tertiary);
+}
+
+.benefit .benefit-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1rem;
+}
+
+#benefit-1{
+    background-image: url(assets/hrz-1.jpg);
+}
+#benefit-2{
+    background-image: url(assets/hrz-2.jpg);
+}
+#benefit-3{
+    background-image: url(assets/hrz-3.jpg);
+}
+
+/* Event location */
+#location{
+    height: 400px;
+    background:  linear-gradient(rgba(0, 0, 0, 0.8), rgba(26,55,77,.35)),
+    url(assets/hrz-1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+}
+
+#address, #about-location{
+    max-width: 30%;
+}
+
+#address{
+    display: flex;
+}
+
+#address i{
+    color: var(--primary);
+    font-size: 4rem;
+    margin-right: 0.5rem;
+}
+
+#address-details{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#about-location h3 {
+    color: var(--primary);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+  }
+
+  #about-location p{
+    line-height: 1.5rem;
+  }
+
+  /* Event details container */
+  #details{
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .detail{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 3rem;
+  }
+
+  .detail img{
+    width: 70%;
+    border-radius: 20px;
+  }
+
+  .detail h3{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  #detail-1 h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+.detail-description{
+    width: 100%;
+    padding-left: 2rem;
+}
+
+#detail-3 .detail-description{
+    justify-self: flex-start;
+}
+
+.detail-description ul{
+    list-style-position: inside;
+    font-size: 20px;
+}
+
+.detail-description ul li{
+    margin-bottom: 0.4rem;
+}
+
+.detail-description ul li:last-child{
+    font-weight: bold;
+}
+
+/* Call to Action */
+#cta{
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(26,55,77,.35)),
+    url(assets/hrz-6.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
+}
+
+#cta h3{
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#cta button{
+    width: 30%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: var(--blueTertiary);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000;
+    padding: 12px;
+    width: 50%;
+}
+
+#cta a{
+    text-decoration: none;
+    color: #000;
+}
+/* 
+@keyframes anima{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+#cta button:hover{
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+} */
+
+/* Footer */
+#footer{
+    text-align: center;
+    color: var(--text-tertiary);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer h3{
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+#footer p:nth-child(2){
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+#footer span{
+    font-weight: bold;
+}
+
+/* botão da Loop */
+
+#div-fixa{
+    position: fixed;
+    bottom: 20px;
+    margin: 0 20px;
+    background: var(--primary);
+    width: 220px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+#div-fixa.shrink{
+    width: 50px;
+    transition: 0.5s all;
+    overflow: hidden;
+}
+
+#div-fixa a{
+    text-decoration: none;
+}
+
+#div-fixa img{
+    width: 50px;
+    height: 50px;
+}
+
+#div-fixa a .flex-itens{
+    display: flex;
+    align-items: center;
+}
+
+#div-fixa a .flex-itens span{
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: var(--secondary);
+    margin: 5px;
+    min-width: 140px;
+    opacity: 0;
+}
+
+#div-fixa a .flex-itens span.aparecer{
+    transition: 0.5s all;
+    opacity: 1;
+}
+
+.piscar{
+    animation-name: piscar;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes piscar{
+    from{
+        transform: translate3d(0, 0, 0);
+        filter: brightness(100%);
+    }
+    to{
+        transform: translate3d(0, -15px, 0);
+        filter: brightness(150%);
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 1020px){
+    /* Event form */
+    #event-subscription{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #disclaimer{
+        padding: 2rem;
+    }
+
+    #disclaimer h2{
+        margin-bottom: 0.5rem;
+    }
+/* 
+    #disclaimer .about-event{
+        display: none;
+    } */
+
+    #subscription{
+        max-width: 70%;
+        margin-bottom: 2rem;
+    }
+
+    /* Benefits section */
+    .benefits{
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2rem;
+    }
+
+    .benefit{
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    /* Event location */
+    #location{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    #address{
+        order: 2;
+         flex-direction: column;
+        max-width: 100%;
+    }
+
+    #address i{
+        margin: 0.3rem 0;
+    }
+
+    #about-location{
+        order: 1;
+        max-width: 100%;
+        
+    }
+
+    #about-location h3{
+        margin-bottom: 1rem;
+    }
+
+    #about-location p{
+        display: none;
+    }
+
+    /* Event details container */
+    .detail{
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+        gap: 0;
+    }
+
+    .detail img{
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    #detail-1 img{
+        display: none;
+    }
+
+    .detail-description{
+        padding: 0;
+    }
+
+    #detail-3 img{
+        order: 2;
+    }
+
+    #detail-3 .detail-description{
+        order: 1;
+    }
+
+    /* Call to Action Section */
+    #cta .btn{
+        width: 80%;
+    }
+}
