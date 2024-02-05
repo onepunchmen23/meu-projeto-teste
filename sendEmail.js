@@ -25,5 +25,5 @@ function sendMail(){
     // var body = document.getElementById("Telefone").value;
     // var SubjectLine = document.getElementById("Nome").value;
     
-    window.location.href = "mailto:grupo-h665da@leadfy-app.com.br?subject="+ebody;
+    window.location.href = "mailto:teste@gmail.com?subject="+ebody;
 }
